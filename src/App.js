@@ -1,12 +1,13 @@
-import './styles';
+// import './styles';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link,
   useRouteMatch,
-  useParams
+  useParams,
+  Routes
 } from "react-router-dom";
+import Profile from "./Pages/Profile";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <div className="App">
         <h2>App Working</h2>
         {/* Todo -> Main Application starts here */}
-        {/* ------ Here it is the sample code ------
+        {/* ------ Here it is the sample code ------ */}
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -27,17 +28,11 @@ const App = () => {
           </li>
         </ul>
 
-        <Switch>
-          <Route path="/about">
-            <About />
+        <Routes>
+          <Route path="/profile">
+            <Profile />
           </Route>
-          <Route path="/topics">
-            <Topics />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch> */}
+        </Routes>
       </div>
     </Router>
   );
