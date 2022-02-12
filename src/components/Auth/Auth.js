@@ -1,11 +1,21 @@
 import { useState } from 'react';
-import { Button, Card, Col, Fade, Form, Row } from 'react-bootstrap';
+import { Card, Col, Fade, Row } from 'react-bootstrap';
 
 import './Auth.css';
+import Login from './Login/Login';
+import Signup from './Signup/Signup';
 
 const Auth = () => {
 
     const [isLogin, setIsLogin] = useState(true);
+    const loginText = "Log In";
+    const signupText = "Sign Up";
+    const loginAction = "Login";
+    const signupAction = "Signup";
+
+    const handleTransition = () => {
+        setIsLogin(!isLogin);
+    }
 
     return (
         <div className='bg-photo min-vh-90'>
@@ -16,25 +26,10 @@ const Auth = () => {
                         <Fade in={isLogin}>
                             <div id="login-card">
                                 <Card.Header>
-                                    <h3>Login</h3>
+                                    <h3>{loginText}</h3>
                                 </Card.Header>
                                 <Card.Body>
-                                    <Form>
-                                        <Form.Group className="mb-3" controlId="email">
-                                            <Form.Label>Email address</Form.Label>
-                                            <Form.Control type="email" placeholder="Enter email" />
-                                        </Form.Group>
-                                        <Form.Group className="mb-3" controlId="password">
-                                            <Form.Label>Password</Form.Label>
-                                            <Form.Control type="password" placeholder="Enter Password" />
-                                        </Form.Group>
-                                        <Form.Group className="mb-3" controlId="helpText">
-                                            <p>New User? <a onClick={() => setIsLogin(!isLogin)} aria-controls="signup-card" aria-expanded={!isLogin} className="pointer">Sign Up</a></p>
-                                        </Form.Group>
-                                        <Button variant="success" type="submit">
-                                            Log In
-                                        </Button>
-                                    </Form>
+                                    <Login signupText={signupText} loginAction={loginAction} isLogin={isLogin} handleTransitionToSignup={handleTransition} />
                                 </Card.Body>
                             </div>
                         </Fade>
@@ -43,30 +38,10 @@ const Auth = () => {
                         <Fade in={!isLogin}>
                             <div id="signup-card">
                                 <Card.Header>
-                                    <h3>Sign Up</h3>
+                                    <h3>{signupText}</h3>
                                 </Card.Header>
                                 <Card.Body>
-                                    <Form>
-                                        <Form.Group className="mb-3" controlId="fullName">
-                                            <Form.Label>Full Name</Form.Label>
-                                            <Form.Control type="text" placeholder="Enter full name" />
-                                        </Form.Group>
-                                        <Form.Group className="mb-3" controlId="email">
-                                            <Form.Label>Email address</Form.Label>
-                                            <Form.Control type="email" placeholder="Enter email" />
-                                        </Form.Group>
-
-                                        <Form.Group className="mb-3" controlId="password">
-                                            <Form.Label>Password</Form.Label>
-                                            <Form.Control type="password" placeholder="Enter Password" />
-                                        </Form.Group>
-                                        <Form.Group className="mb-3" controlId="helpText">
-                                            <p>Existing User? <a onClick={() => setIsLogin(!isLogin)} aria-controls="login-card" aria-expanded={isLogin} className="pointer">Log In</a></p>
-                                        </Form.Group>
-                                        <Button variant="success" type="submit">
-                                            Sign Up
-                                        </Button>
-                                    </Form>
+                                    <Signup loginText={loginText} signupAction={signupAction} isLogin={isLogin} handleTransitionToLogin={handleTransition} />
                                 </Card.Body>
                             </div>
                         </Fade>   
