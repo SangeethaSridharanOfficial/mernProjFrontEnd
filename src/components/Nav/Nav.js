@@ -15,12 +15,13 @@ function Navigation() {
                 <Container>
                     <Navbar.Brand as={Link} to="/">Logo</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end d-flex'>
+                    <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
                         <Nav>
-                            <Nav.Link as={Link} to="/" className="nav-link pe-3">Products</Nav.Link>
-                            <Nav.Link as={Link} to="/my-orders" className="nav-link pe-3" >My Orders</Nav.Link>
-                            <Nav.Link as={Link} to="/cart" className="nav-link pe-3" >My Cart</Nav.Link>
-                            <Nav.Link>
+                            <Nav.Link as={Link} to="/" className="pe-3">Products</Nav.Link>
+                            <Nav.Link as={Link} to="/my-orders" className="pe-3" >My Orders</Nav.Link>
+                            <Nav.Link as={Link} to="/cart" className="pe-3" >My Cart</Nav.Link>
+                            {/*Logout Button - To be shown only if the user is logged in*/}
+                            <Nav.Link as={Link} to="/auth">
                                 <FontAwesomeIcon icon={faPowerOff} /> Logout
                             </Nav.Link>
                         </Nav>
