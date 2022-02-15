@@ -20,6 +20,7 @@ function Navigation() {
                             <Nav.Link as={Link} to="/" className="nav-link pe-3">Products</Nav.Link>
                             <Nav.Link as={Link} to="/my-orders" className="nav-link pe-3" >My Orders</Nav.Link>
                             <Nav.Link as={Link} to="/cart" className="nav-link pe-3" >My Cart</Nav.Link>
+                            <Nav.Link as={Link} to="/profile" className="nav-link pe-3" >My Profile</Nav.Link>
                             <Nav.Link>
                                 <FontAwesomeIcon icon={faPowerOff} /> Logout
                             </Nav.Link>
