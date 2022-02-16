@@ -2,3 +2,7 @@
 Add any exception,Global CSS Here
 */
 body, html { overflow-x: hidden; }
+
+.display-none {
+    display: none !important;
+}
