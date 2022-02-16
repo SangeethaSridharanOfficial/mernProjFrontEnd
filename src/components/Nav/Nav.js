@@ -20,8 +20,9 @@ function Navigation() {
                             <Nav.Link as={Link} to="/" className="pe-3">Products</Nav.Link>
                             <Nav.Link as={Link} to="/my-orders" className="pe-3" >My Orders</Nav.Link>
                             <Nav.Link as={Link} to="/cart" className="pe-3" >My Cart</Nav.Link>
-                            {/*Logout Button - To be shown only if the user is logged in*/}
+                            <Nav.Link as={Link} to="/profile" className="nav-link pe-3" >My Profile</Nav.Link>
                             <Nav.Link as={Link} to="/auth">
+                            <Nav.Link>
                                 <FontAwesomeIcon icon={faPowerOff} /> Logout
                             </Nav.Link>
                         </Nav>

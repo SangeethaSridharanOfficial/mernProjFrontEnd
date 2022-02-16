@@ -6,10 +6,10 @@ Ecommerce application to show list of sport goods and accessories
 Project is built using React and other dependent libraries
 
 ## Work Assignment
-| Name          | HumberID      | Tasks                                                            |
+| Name          | HumberID      | Tasks                                                           |
 | ------------- | ------------- | ----------------------------------------------------------------|
 | Chaitanya     | N01502504     | Products Page,React router and bootstrap setup                  |
-|               |               |                                                                 |
+| Sangeetha     | N01420662     | Profile Page, Order Return and Filter and Sort Functionality    |
 
 
 ### Installing
