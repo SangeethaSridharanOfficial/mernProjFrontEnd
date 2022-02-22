@@ -1,0 +1,71 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Cardio",
+            "description": "Aerobic exercise (also known as endurance activities, cardio or cardio-respiratory exercise)",
+            "imageUrl": "https://post.greatist.com/wp-content/uploads/sites/2/2021/03/GRT-310160-Out-of-Space-in-Shape-8-Best-Compact-Treadmills-of-2021-Sunny-Health-Fitness-Folding-Compact-Motorized-Treadmill.png"
+        },
+        {
+            "id": 2,
+            "name": "Yoga",
+            "description": "Group of physical, mental, and spiritual practices or disciplines",
+            "imageUrl": "http://cdn.shopify.com/s/files/1/0259/3665/8531/products/Liforme_Yoga_Mat_Blue_5_grande.jpg?v=1632819010"
+        },
+        {
+            "id": 3,
+            "name": "Cycling",
+            "description": "Aerobic exercise (also known as endurance activities, cardio or cardio-respiratory exercise)",
+            "imageUrl": "https://cdn.dribbble.com/users/1573719/screenshots/16272329/media/c7e2b5ad08d8105adca863e466ab4847.png?compress=1&resize=400x236"
+        }
+    ],
+    "products": {
+        "1": [
+            {
+                "id": 1,
+                "name": "Treadmills",
+                "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41KCAQhf++L._AC._SR240,240.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Excercise Bikes",
+                "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41lMqDYHeCL._AC._SR240,240.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Elliptical Trainers",
+                "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/31Qm92UzPZL._AC._SR240,240.jpg"
+
+            },
+            {
+                "id": 4,
+                "name": "Pedal Excercisers",
+                "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41Qr7rZ5TvL._AC._SR240,240.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Vibration Products",
+                "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41A8UaZ4mqL._AC._SR240,240.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Step Machines",
+                "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/4198g9iYa4L._AC._SR240,240.jpg"
+            }
+        ],
+        "2": [
+            {
+                "id": 1,
+                "name": "Coming Soon",
+                "imageUrl": "https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?size=626&ext=jpg"
+            }
+        ],
+        "3": [
+            {
+                "id": 1,
+                "name": "Coming Soon",
+                "imageUrl": "https://img.freepik.com/free-vector/neon-style-coming-soon-glowing-background-design_1017-25516.jpg?size=626&ext=jpg"
+            }
+        ]
+    }
+}
