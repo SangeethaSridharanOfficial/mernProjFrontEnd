@@ -13,7 +13,7 @@ function Navigation() {
         <>
             <Navbar className="drop-shadow" bg="dark" variant="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand as={Link} to="/">Logo</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
                         <Nav>

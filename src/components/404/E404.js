@@ -1,6 +1,6 @@
 function E404() {
     return (
-        <div>404 Page Not Found...</div>
+        <div><h4 className="header text-center text-danger">Invalid Page/Route not configured</h4></div>
     )
 }
 
