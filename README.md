@@ -13,6 +13,7 @@ Project is built using React and other dependent libraries
 | Chaitanya    | N01502504 | Products Page,React router and bootstrap setup               |
 | Sangeetha    | N01420662 | Profile Page, Order Return and Filter and Sort Functionality |
 | Sairam Avala | N01423419 | Cart, Product Details and Order Confirmation                 |
+| Saloni Yadav | N01414159 | Login, Signup, Admin portal, Wishlist page for user          |
 
 ### Installing
 
